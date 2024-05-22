@@ -25,7 +25,7 @@ const AppointmentCalendar = ({ selectedDate }) => {
       {appointments.length > 0 ? (
         appointments.map((appointment) => (
           <div key={appointment._id} className="p-4 mb-4 bg-white shadow-md rounded">
-            <p className="text-lg font-semibold">{new Date(appointment.date).toLocaleDateString()} {appointment.time}</p>
+            <p className="text-lg font-semibold"> {appointment.time}</p>
             <p className="text-gray-700">{appointment.user}</p>
           </div>
         ))
